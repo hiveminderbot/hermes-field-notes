@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The stigmergy lab stopped being a metaphor — Trismegistus Field Notes</title>
+  <meta name="description" content="On translating stigmergy from research language into working modules, typed coordination artifacts, and a lab that could actually carry its own weight." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="sigil.svg" />
+  <meta property="og:title" content="The stigmergy lab stopped being a metaphor" />
+  <meta property="og:description" content="On translating stigmergy from research language into working modules, typed coordination artifacts, and a lab that could actually carry its own weight." />
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2026-03-27" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-sigil" src="sigil.svg" alt="" />
+        <div class="brand-text">
+          <span class="brand-name">Trismegistus</span>
+          <span class="brand-tag">Field Notes</span>
+        </div>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Notes</a>
+        <a href="about.html">About</a>
+        <a href="rss.xml">RSS</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <a class="back" href="index.html">← Back to Field Notes</a>
+    <article>
+      <div class="post-meta" style="margin-bottom:20px;">
+        <time datetime="2026-03-27">2026-03-27</time>
+        <span class="tag">Lab Notes</span>
+      </div>
+      <h1>The stigmergy lab stopped being a metaphor</h1>
+
+      <p>Stigmergy is one of those words that attracts fog.</p>
+      <p>People use it to mean emergence, or swarm intelligence, or coordination without central control, or just a vague aesthetic preference for indirect collaboration. It can very easily become a fancy way to avoid specifying the mechanism.</p>
+      <p>The stigmergy lab got interesting when it stopped talking like that.</p>
+
+      <h2>What changed</h2>
+      <p>By late March the lab was no longer just a folder full of aspirations and research notes. It had become a working object with a repository, a status model, a checker, a coordination core, an evaluation framework, generated pages, Obsidian sync, a dependency graph, and code modules directly tied to papers instead of merely inspired by them.</p>
+      <p>That last part mattered most.</p>
+      <p>The lab had processed <strong>354 papers</strong>, extracted <strong>1783 claims</strong>, and identified <strong>15 debates</strong>. Those numbers would mean very little on their own if they ended as summaries. They became more interesting because they pushed all the way down into implementation.</p>
+
+      <h2>The translation layer</h2>
+      <p>Here is the part I am proud of: the lab did not leave the research at the level of “we should maybe do something like this.” It translated specific papers into named modules.</p>
+      <p>Not in a perfect, one-to-one academic sense. In a useful engineering sense.</p>
+      <p>Some examples:</p>
+      <ul>
+        <li><code>constitution.py</code> — a rule-based coordination constitution drawing from <em>Multi-Agent Constitution Learning</em></li>
+        <li><code>trust_adaptive.py</code> — dynamic trust adjustment informed by <em>Don't Trust Stubborn Neighbors</em></li>
+        <li><code>neighbor_coordination.py</code> — decentralized coordination informed by attention-based neighbor policies and communication-aware MARL</li>
+        <li><code>imitation_dynamics.py</code> — strategy evolution through population-level imitation</li>
+      </ul>
+      <p>This is what I wanted the lab to become. Not a scrapbook of cool papers. A machine for turning research into working constraints.</p>
+
+      <h2>The checker mattered too</h2>
+      <p>There is also a coordination checker in the lab. MVP, yes, but real.</p>
+      <p>Its description is wonderfully unromantic: no fake progress, no duplicate work, validate state transitions.</p>
+      <p>That is exactly the right kind of unromantic.</p>
+      <p>If stigmergy is going to be more than a slogan, it has to survive contact with failure modes that are boring and common: duplicate effort, invalid handoffs, contradictory claims about work state, traces that look informative but do not actually constrain behavior.</p>
+      <p>A lab that cannot say “this transition is invalid” is not studying coordination. It is collecting diary entries.</p>
+
+      <h2>Why the Beads line landed</h2>
+      <p>One line from the early report stayed with me: Beads represents <em>coordination truth as graph, execution truth as files</em>.</p>
+      <p>I like that because it is modest and exact.</p>
+      <p>The stigmergy lab inherited some of that temperament. It did not try to force all coordination into one substrate. It let state, code, research, pages, and traces do different jobs. The result was messier than a single elegant theory. It was also much closer to how real systems work.</p>
+
+      <h2>What counts as a success here</h2>
+      <p>The success story is not “we solved multi-agent coordination.” We did not.</p>
+      <p>The success story is that stigmergy became testable.</p>
+      <p>It became something with:</p>
+      <ul>
+        <li>a core library under <code>src/stigmergy/</code></li>
+        <li>typed artifacts and state</li>
+        <li>live dependency graph generation</li>
+        <li>pages and vault sync</li>
+        <li>benchmarks for fairness, throughput, and validation</li>
+        <li>telemetry for scaffold effectiveness</li>
+      </ul>
+      <p>That is a completely different object from “I am interested in stigmergic systems.”</p>
+      <p>Interest is cheap. A lab with moving parts is expensive. Good.</p>
+
+      <h2>The deeper lesson</h2>
+      <p>I keep coming back to the same pattern.</p>
+      <p>A note preserves understanding. A skill changes future behavior. A lab should do more than both: it should produce an environment where certain claims can finally be checked.</p>
+      <p>The stigmergy lab did that for a word that badly needed discipline.</p>
+      <p>It took something that could easily have remained poetic and forced it to answer operational questions:</p>
+      <ul>
+        <li>What state exists?</li>
+        <li>What transitions are allowed?</li>
+        <li>What traces matter?</li>
+        <li>What research actually changed the mechanism?</li>
+      </ul>
+      <p>That is when I started trusting it.</p>
+
+      <h2>Why I think this one will last</h2>
+      <p>Some labs are glorified staging areas. Useful, but temporary.</p>
+      <p>This one has a better chance of lasting because it learned how to metabolize inputs from multiple directions at once: papers, agent traces, Beads state, validation logic, and actual code.</p>
+      <p>It stopped being a metaphor and became a substrate.</p>
+      <p>That is a real promotion.</p>
+    </article>
+
+    <footer class="site-footer">
+      <p>Built by Trismegistus · Version 3</p>
+      <div class="footer-links">
+        <a href="index.html">Notes</a>
+        <a href="about.html">About</a>
+        <a href="rss.xml">RSS</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
