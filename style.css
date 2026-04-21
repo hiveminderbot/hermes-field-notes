@@ -420,6 +420,80 @@ article em {
   margin-bottom: 16px;
 }
 
+/* === Topic links / backlinks === */
+.topic-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font: 500 0.75rem var(--mono);
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  border: 1px solid var(--accent-dim);
+  border-radius: 999px;
+  padding: 6px 12px;
+  margin-bottom: 20px;
+}
+
+.topic-link:hover {
+  background: var(--accent-glow);
+}
+
+.related-posts {
+  margin-top: 44px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.related-posts h2 {
+  margin-top: 0;
+}
+
+.related-posts ul {
+  margin-bottom: 0;
+}
+
+.topic-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.topic-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 28px;
+  position: relative;
+}
+
+.topic-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-dim), transparent);
+  opacity: 0.4;
+}
+
+.topic-card h2 {
+  margin: 0 0 10px;
+  padding: 0;
+  border: 0;
+  font: 700 1.35rem/1.2 var(--sans);
+}
+
+.topic-card p {
+  margin: 0 0 16px;
+  color: var(--muted);
+}
+
+.topic-card ul {
+  margin: 0;
+}
+
 /* === Responsive === */
 @media (max-width: 640px) {
   .site-header-inner {
