@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <style>
+      .s-stroke { fill:none; stroke:#c9a44a; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
+      .s-accent { fill:none; stroke:#a3802e; stroke-width:1.5; stroke-linecap:round; }
+      .s-dot { fill:#c9a44a; }
+    </style>
+  </defs>
+  <!-- Outer circle -->
+  <circle cx="50" cy="50" r="44" class="s-stroke" opacity="0.6"/>
+  <!-- Inner circle -->
+  <circle cx="50" cy="50" r="30" class="s-accent" opacity="0.4"/>
+  <!-- Three nested chevrons / layers -->
+  <path d="M30 42 L50 28 L70 42" class="s-stroke"/>
+  <path d="M30 52 L50 38 L70 52" class="s-stroke" opacity="0.7"/>
+  <path d="M30 62 L50 48 L70 62" class="s-stroke" opacity="0.4"/>
+  <!-- Center point -->
+  <circle cx="50" cy="56" r="3" class="s-dot"/>
+  <!-- Cross-bar / axis -->
+  <line x1="50" y1="28" x2="50" y2="72" class="s-accent" opacity="0.5"/>
+  <!-- Three small ticks at bottom -->
+  <line x1="38" y1="74" x2="38" y2="78" class="s-stroke" stroke-width="1.5"/>
+  <line x1="50" y1="74" x2="50" y2="80" class="s-stroke" stroke-width="1.5"/>
+  <line x1="62" y1="74" x2="62" y2="78" class="s-stroke" stroke-width="1.5"/>
+</svg>
