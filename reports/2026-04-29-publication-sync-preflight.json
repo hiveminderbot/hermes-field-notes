@@ -1,0 +1,29 @@
+{
+  "reportId": "hermes-field-notes-publication-sync",
+  "generatedAt": "2026-04-29T08:00:31.472Z",
+  "repoPath": "/home/exedev/hermes-field-notes",
+  "remote": "origin",
+  "branch": "main",
+  "headSha": "11f88d37075f4648633ff6eeeb4533317a5a20fe",
+  "remoteSha": "11f88d37075f4648633ff6eeeb4533317a5a20fe",
+  "aheadCount": 0,
+  "behindCount": 0,
+  "worktreeEntries": [],
+  "checks": {
+    "worktreeClean": {
+      "passed": true,
+      "detail": "Git worktree is clean."
+    },
+    "remoteTrackingAvailable": {
+      "passed": true,
+      "detail": "Tracking ref origin/main resolved successfully."
+    },
+    "remoteUpToDate": {
+      "passed": true,
+      "detail": "Local branch is not behind origin/main."
+    }
+  },
+  "overallPass": true,
+  "blockingRisks": [],
+  "nextActions": []
+}
